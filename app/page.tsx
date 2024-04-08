@@ -57,8 +57,8 @@ export default function Home() {
     {/*
     <Question data={database1[index]} userPick={handleUserPick}></Question>
     */}
-    {!isDone && <Question data={database1[index]} userPick={handleUserPick}></Question>}
-    {isDone && <AnswersView data={tally}></AnswersView>}
+    {!isDone && <Question record={database1[index]} userPick={handleUserPick}></Question>}
+    {isDone && <AnswersView record={tally}></AnswersView>}
     </div>
   );
   
@@ -69,11 +69,11 @@ export default function Home() {
 // }
 // 
 
-function AnswersView({data}) {
+function AnswersView({record}) {
   // debugger
   return (
     <div className="answers-view">
-      {data.map(x => 
+      {record.map(x => 
         <ul key={x.id} className="">
           <li>
             <h2>Question: {x.name}</h2>

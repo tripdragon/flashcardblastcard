@@ -47,6 +47,15 @@ display: flex;
   
   /* min-height: 100svh; */
 }
+
+.question .main-image{
+  padding: 1em;
+}
+
+.feature-word{
+  font-size: 12rem;
+}
+
 /* 
 .question:nth-child(1) {
   display: block;
