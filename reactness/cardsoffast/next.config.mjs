@@ -14,6 +14,7 @@ const nextConfig = {
   },
   output: "export",  // <=== enables static exports
   reactStrictMode: true,
+  basePath: "/flashcardblastcard",
 };
 
 export default nextConfig;
