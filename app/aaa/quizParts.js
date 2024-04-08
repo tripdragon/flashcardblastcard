@@ -31,7 +31,10 @@ export function Question({data, userPick}){
   }
   
   let list = data.choices.slice().map(x => 
-    <button key={x.id} onClick={handleClick} value={x}>{x}</button>
+    <div class="button-item">
+      <span>{x}</span>
+      <button key={x.id} onClick={handleClick} value={x}>{x}</button>
+    </div>
   );
   list = shuffle(shuffle(list));
   

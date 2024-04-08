@@ -32,6 +32,8 @@ export default function Home() {
       setIsDone(true);
     }
     
+    // how to add a page delay here?
+    
     // check if done in this frame
     if(!isDone || mDone === false && isDone === true){
       // debugger
@@ -43,6 +45,8 @@ export default function Home() {
         }
       ])
     }
+    
+    
     
     // debugger
   }
