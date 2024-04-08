@@ -18,7 +18,9 @@
     "@hapi/boom": "9.x.x",
     "@hapipal/haute-couture": "4.x.x",
     "joi": "17.x.x",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@hapi/code": "8.x.x",
