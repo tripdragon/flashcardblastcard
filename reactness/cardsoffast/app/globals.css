@@ -1,42 +1,87 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
+/* 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
 }
 
+
+.site{
+  /* background-color: orange; */
+}
+
+.question{
+  
+/* display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px; */
+
+display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  
+  background-color: orange;
+  height: 100vh;
+  
+  max-width: 80%;
+  margin: 0 auto;
+}
+/* 
+.question:nth-child(1) {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.question:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+} 
+*/
+.question:nth-child(2) {
+  
+}
 
 .subjectblock{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  
+  
+  margin-top: auto;
+  /* justify-content: center; */
+    /* align-items: center; */
+    
+    /* justify-items: center; */
+}
+.subjectblock img{
+  /* width: 100%; */
+  max-width: 100%;
 }
 
 
@@ -46,16 +91,33 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  grid-template-rows: auto;
+  
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
+  min-height: 100px;
+  
+  margin-top: auto;
+  justify-content: center;
+    /* align-items: center; */
+    
+    /* justify-items: center; */
+    
 }
 .quizblock button{
   /* background-color: green; */
   border: solid 2px silver;
-  padding: 4em;
+  /* padding: 4em; */
+  /* min-height: 100px; */
   margin: 0.4em;
+  /* max-width: 20vh; */
+  /* max-width: 200px; */
 }
 .quizblock button:active{
   background-color: #ffff00;
+}
+
+.answers-view li{
+  margin: 20px 10px;
+  padding: 10px;
 }
