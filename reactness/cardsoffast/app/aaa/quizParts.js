@@ -4,7 +4,7 @@ import {shuffle} from '../utilites.js';
 
 export function Multichoice() {
   return (
-    <div class="quizblock">
+    <div className="quizblock">
     <button>A</button>
     <button>B</button>
     <button>C</button>
@@ -15,7 +15,7 @@ export function Multichoice() {
 
 export function Subject({src}) {
   return (
-    <div class="subjectblock">
+    <div className="subjectblock">
     <img src={src} />
     </div>
   );
@@ -38,9 +38,9 @@ export function Question({data, userPick}){
   const answer = data.answer;
   
   return (
-    <div class="question">
+    <div className="question">
       <Subject src={data.img}></Subject>
-      <div class="quizblock">
+      <div className="quizblock">
         {list}
       </div>
     </div>

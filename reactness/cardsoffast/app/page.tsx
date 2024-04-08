@@ -18,10 +18,11 @@ export default function Home() {
   // const tally = {};
   
   
+  // function handleUserPick(ev: Any) {
   function handleUserPick(ev) {
     // console.log("ev", ev);
     
-    console.log("answer event", ev.data.value);
+    // console.log("answer event", ev.data.value);
     const mDone = isDone;
     let yy = index+1;
     if (yy < database1.length){
@@ -48,7 +49,7 @@ export default function Home() {
 
   // <h2>{index}</h2>
   return (
-    <div class="site">
+    <div className="site">
     {/*
     <Question data={database1[index]} userPick={handleUserPick}></Question>
     */}
@@ -67,9 +68,9 @@ export default function Home() {
 function AnswersView({data}) {
   // debugger
   return (
-    <div class="answers-view">
+    <div className="answers-view">
       {data.map(x => 
-        <ul key={x.id} class="">
+        <ul key={x.id} className="">
           <li>
             <h2>Question: {x.name}</h2>
             <h3>pick: {x.pick} | answer: {x.original.answer}</h3>
