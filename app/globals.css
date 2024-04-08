@@ -38,12 +38,13 @@ display: flex;
   align-content: normal;
   
   background-color: blue;
-  height: 100vh;
+  background-color: orange;
+  height: 100svh;
   
   /* max-width: 80%; */
   margin: 0 auto;
   
-  min-height: 100svh;
+  /* min-height: 100svh; */
 }
 /* 
 .question:nth-child(1) {
