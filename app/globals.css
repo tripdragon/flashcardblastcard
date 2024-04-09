@@ -48,6 +48,10 @@ display: flex;
   /* min-height: 100svh; */
 }
 
+.question .title{
+  padding: 10px;
+  text-align: center;
+}
 .question .main-image{
   padding: 1em;
 }
