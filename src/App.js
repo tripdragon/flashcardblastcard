@@ -56,7 +56,6 @@ function App() {
   console.log("sortedItems", sortedItems);
   
 
-  
   // useLayoutEffect(() => {
   // useEffect(() => {
   useMemo(() => {
