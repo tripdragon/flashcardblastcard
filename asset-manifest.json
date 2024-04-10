@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/flashcardblastcard/static/css/main.7a8a8e83.css",
-    "main.js": "/flashcardblastcard/static/js/main.35db0da5.js",
+    "main.css": "/flashcardblastcard/static/css/main.b7fd2788.css",
+    "main.js": "/flashcardblastcard/static/js/main.7546d184.js",
     "static/js/453.6a483a88.chunk.js": "/flashcardblastcard/static/js/453.6a483a88.chunk.js",
     "static/media/logo.svg": "/flashcardblastcard/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/flashcardblastcard/index.html",
-    "main.7a8a8e83.css.map": "/flashcardblastcard/static/css/main.7a8a8e83.css.map",
-    "main.35db0da5.js.map": "/flashcardblastcard/static/js/main.35db0da5.js.map",
+    "main.b7fd2788.css.map": "/flashcardblastcard/static/css/main.b7fd2788.css.map",
+    "main.7546d184.js.map": "/flashcardblastcard/static/js/main.7546d184.js.map",
     "453.6a483a88.chunk.js.map": "/flashcardblastcard/static/js/453.6a483a88.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a8a8e83.css",
-    "static/js/main.35db0da5.js"
+    "static/css/main.b7fd2788.css",
+    "static/js/main.7546d184.js"
   ]
 }
