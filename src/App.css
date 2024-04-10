@@ -231,9 +231,24 @@
 .answers-view{
   padding-bottom: 100px;
 }
+.answers-view .winner-title{
+  font-size: 4rem;
+  color: orange;
+  font-weight: 900;
+  padding: 10px 2rem 0;
+}
 .answers-view .title{
   padding: 10px 2rem 0;
   font-size: 3rem;
+  margin: 0;
+}
+.answers-view .title span{
+  font-style: italic;
+  font-size: 1.4rem;
+}
+.answers-view .title2{
+  padding: 10px 2rem 0;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -241,6 +256,32 @@
   font-size: 4rem;
   padding: 0em 0.5em;
   font-weight: 900;
+  
+  display: flex;
+  flex-direction: column;
+    
+  justify-content: center; 
+  align-items: center;    
+
+}
+.answers-view .left .minititle{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.answers-view .correct .title2{
+  color: blue;
+}
+.answers-view .wrong .title2{
+  color: red;
+}
+
+.answers-view .wrong .left{
+  color: red;
+}
+
+.answers-view .correct .left{
+  color: blue;
 }
 
 .answers-view .results{

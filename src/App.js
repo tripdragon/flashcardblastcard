@@ -87,7 +87,7 @@ function App() {
     if(!isDone || mDone === false && isDone === true){
       setTally([ ...tally,
         {
-          name : ev.data.original.name,
+          name : ev.data.original.answer,
           original: ev.data.original,
           pick : ev.data.value
         }
@@ -104,7 +104,7 @@ function App() {
     {/*
     */}
     {!isDone && <Question source={database1} answer={sortedItems[index].answer} possibles={database1.possibles} choicesCount="3" name={database1.name} record={sortedItems[index]} userPick={handleUserPick}></Question>}
-    {isDone && <AnswersView record={tally}></AnswersView>}
+    {isDone && <AnswersView records={tally}></AnswersView>}
     </div>
   );
   
