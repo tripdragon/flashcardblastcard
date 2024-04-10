@@ -8,19 +8,20 @@ export const data1 = [
 
 export const germanNumbers = {
   name: "German Numbers",
-  // possibles : ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"],
-  possibles : ["null", "eins", "zwei", "drei"],
+  possibles : ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"],
+  // possibles : ["null", "eins", "zwei", "drei"],
   speed:"1",
   items : [
     { answer:"null", displayType:"text", word:"0", choices:[]},
     { answer:"eins", displayType:"text", word:"1", choices:[]},
     { answer:"zwei", displayType:"text", word:"2", choices:[]},
     { answer:"drei", displayType:"text", word:"3", choices:[]},
-    // { answer:"vier", displayType:"text", word:"4", choices:[]},
-    // { answer:"fünf", displayType:"text", word:"5", choices:[]},
-    // { answer:"sechs", displayType:"text", word:"6", choices:[]},
-    // { answer:"sieben", displayType:"text", word:"7", choices:[]},
-    // { answer:"acht", displayType:"text", word:"8", choices:[]},
-    // { answer:"neun", displayType:"text", word:"9", choices:[]},
+    
+    { answer:"vier", displayType:"text", word:"4", choices:[]},
+    { answer:"fünf", displayType:"text", word:"5", choices:[]},
+    { answer:"sechs", displayType:"text", word:"6", choices:[]},
+    { answer:"sieben", displayType:"text", word:"7", choices:[]},
+    { answer:"acht", displayType:"text", word:"8", choices:[]},
+    { answer:"neun", displayType:"text", word:"9", choices:[]},
   ]
 }

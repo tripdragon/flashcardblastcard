@@ -1,5 +1,8 @@
 
 
+npm install -g serve
+
+
 https://blog.logrocket.com/deploying-react-apps-github-pages/
 npm run deploy
 
