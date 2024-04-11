@@ -27,7 +27,7 @@ export function AnswersView({records}) {
               
               <section className="left">
                 <div>{x.original.word}</div>
-                <div class="minititle">{x.original.answer}</div>
+                <div className="minititle">{x.original.answer}</div>
               </section>
               <div className="results">
                 
@@ -51,7 +51,7 @@ export function AnswersView({records}) {
               
               <section className="left">
                 <div>{x.original.word}</div>
-                <div class="minititle">{x.original.answer}</div>
+                <div className="minititle">{x.original.answer}</div>
               </section>
               <div className="results">
                 
