@@ -128,7 +128,9 @@
 
 	font-size: 1.4rem;
 
-	background-color: #00959e47;
+	/* background-color: #00959e47; */
+	background-color: transparent;
+	border: solid 1px black;
 }
 
 

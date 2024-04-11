@@ -43,6 +43,11 @@ function App({mSortedItems}) {
   // this is here for now cause dont know how to send extra arguments
   function handleUserPick(ev) {
     
+    // there is a double settimeout thing here for now
+    // first flashes the answer, BUT we also have to delay the transition cause
+    // the answer is already updated showing the wrong answer
+    // Refactor this in a react~y way
+    
     // debugger
     // flash the answer
     if( !isPickTheAnswer(ev) ){  
