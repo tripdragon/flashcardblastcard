@@ -6,7 +6,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   // base: "https://tripdragon.github.io/flashcardblastcard",
-  base: "./",
+  base: "/flashcardblastcard/",
   resolve : {
     alias: {
       '@utilites': path.resolve(__dirname, './src/utilites/utilites.js'),
