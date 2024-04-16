@@ -18,9 +18,6 @@ export default function Root() {
       <nav>
         <ul>
           <li>
-            <Link to={`/lesson/japanese/hiragana`}>japanese hiragana</Link>
-          </li>
-          <li>
             <Link to={`/lesson/japaneseNumbers1`}>Japanese numbers</Link>
           </li>
           <li>

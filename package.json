@@ -1,9 +1,9 @@
 {
-  "name": "stuuuuf",
+  "name": "flashcardblastcard",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tripdragon.github.io/flashcardblastcard",
+  "asdfsdfdshomepage": "https://tripdragon.github.io/flashcardblastcard",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
