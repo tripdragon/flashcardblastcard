@@ -6,8 +6,8 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   // base: "https://tripdragon.github.io/flashcardblastcard",
-  base: "/",
-  // base: "/flashcardblastcard/",
+  // base: "/",
+  base: "/flashcardblastcard/",
   // base: './',
   resolve : {
     alias: {
