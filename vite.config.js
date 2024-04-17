@@ -5,7 +5,8 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/flashcardblastcard/',
+  // base: '/flashcardblastcard/',
+  base: './',
   resolve : {
     alias: {
       '@utilites': path.resolve(__dirname, './src/utilites/utilites.js'),
