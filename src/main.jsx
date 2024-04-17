@@ -6,7 +6,8 @@ import './index.css'
 import {lessonsDatabase1} from "@databases/database1";
 
 import {
-  createBrowserRouter,
+  // createBrowserRouter,
+  createHashRouter,
   RouterProvider,
   useLoaderData,
   useParams
@@ -22,7 +23,8 @@ function Root() {
   )
 }
 
-const router = createBrowserRouter([
+// const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />

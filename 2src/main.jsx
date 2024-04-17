@@ -12,8 +12,7 @@ import {lessonsDatabase1} from "@databases/database1";
 
 
 import {
-  // createBrowserRouter,
-  createHashRouter,
+  createBrowserRouter,
   RouterProvider,
   useLoaderData,
   useParams
@@ -81,8 +80,7 @@ import {
 
 
 
-// const router = createBrowserRouter([
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
