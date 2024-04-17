@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tripdragon.github.io/flashcardblastcard/",
+  "homepage": "https://tripdragon.github.io/flashcardblastcard",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
