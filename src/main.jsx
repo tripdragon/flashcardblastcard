@@ -5,8 +5,42 @@ import './index.css'
 
 import {lessonsDatabase1} from "@databases/database1";
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useLoaderData,
+  useParams
+} from "react-router-dom";
+
+function Root() {
+  return (
+    <>
+      <h2>
+        tacos
+      </h2>
+    </>
+  )
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />
+  },
+
+  // {
+  //   path: "lesson/:lessonId",
+  //   element: <Lesson />,
+  // },
+  
+]);
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    {/*
+      <App />
+      */}
+      <RouterProvider router={router} />
   </React.StrictMode>,
 )
