@@ -1,0 +1,223 @@
+/* 
+body{
+  background-color: orange;
+} */
+
+/* *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+} */
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+} */
+
+
+.site {
+	/* background-color: orange; */
+}
+
+.question {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: normal;
+	align-items: normal;
+	align-content: normal;
+
+	/* background-color: blue; */
+	/* background-color: orange; */
+	/* handles the safari addressbar issue */
+	height: 100svh;
+
+	margin: 0 auto;
+  
+
+}
+
+.question .title {
+	padding: 10px;
+	text-align: center;
+}
+
+
+.question .main-image {
+	padding: 1em;
+}
+
+.feature-word {
+	font-size: 12rem;
+}
+
+.subjectblock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+
+	margin-top: auto;
+
+	height: 100%;
+  position: relative;
+}
+
+.subjectblock .title-answer {
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  color: #4242ff;
+  position: absolute;
+  background: #ffff00eb;
+  width: 100%;
+}
+
+.subjectblock img {
+	/* width: 100%; */
+	max-width: 100%;
+}
+
+
+.quizblock {
+
+	display: flex;
+
+	justify-content: center;
+	align-items: flex-end;
+
+	/* background-color: #bbdefb; */
+	/* height: 100%; */
+	padding: 0 10px 10px;
+	gap: 5px;
+
+	position: relative;
+	top: -140px;
+
+}
+
+.quizblock button:active {
+	/* background-color: #ffff00; */
+	/* background-color: transparent; */
+}
+
+.button-item {
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: normal;
+
+	width: 20vh;
+
+
+}
+
+.button-item button {
+
+	width: 100%;
+	height: auto;
+	min-height: 110px;
+
+	border: none;
+	border-radius: 16px;
+
+	font-size: 1.4rem;
+
+	/* background-color: #00959e47; */
+	background-color: transparent;
+	border: solid 1px black;
+}
+
+
+
+
+
+
+.answers-view{
+  padding-bottom: 100px;
+}
+.answers-view .winner-title{
+  font-size: 4rem;
+  color: orange;
+  font-weight: 900;
+  padding: 10px 2rem 0;
+}
+.answers-view .title{
+  padding: 10px 2rem 0;
+  font-size: 3rem;
+  margin: 0;
+}
+.answers-view .title span{
+  font-style: italic;
+  font-size: 1.4rem;
+}
+.answers-view .title2{
+  padding: 10px 2rem 0;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.answers-view .left{
+  font-size: 4rem;
+  padding: 0em 0.5em;
+  font-weight: 900;
+  
+  display: flex;
+  flex-direction: column;
+    
+  justify-content: center; 
+  align-items: center;    
+
+}
+.answers-view .left .minititle{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.answers-view .correct .title2{
+  color: blue;
+}
+.answers-view .wrong .title2{
+  color: red;
+}
+
+.answers-view .wrong .left{
+  color: red;
+}
+
+.answers-view .correct .left{
+  color: blue;
+}
+
+.answers-view .results{
+  flex-grow:1;
+  flex-shrink:1;
+  align-self:auto;
+  align-self:center;
+}
+
+.answers-view ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0 20px;
+}
+
+.answers-view li {
+  display: flex;
+  /* background-color: #bbdefb; */
+  padding: 2em 0;
+  gap: 5px;
+  
+  border-bottom: solid 1px #d8b0ff;
+  
+}
