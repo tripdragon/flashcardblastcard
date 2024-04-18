@@ -123,7 +123,7 @@ export const lessonsDatabase1 = {
   },
   
   "japaneseHiragana1":{
-    "title": "Japanese Numbers single - k",
+    "title": "Japanese letters a - k",
     "speed":"1",
     "mode":"first",// in the works idea
     "pairs":[
@@ -133,4 +133,69 @@ export const lessonsDatabase1 = {
     ]
   },
   
+  "japaneseHiragana2":{
+    "title": "Japanese letters s - t",
+    "speed":"1",
+    "mode":"first",// in the works idea
+    "pairs":[
+      // These are missing the phonetic pronunciation
+      ["sa", "さ"],
+      ["shi", "し"],
+      ["su", "す"],
+      ["se", "せ"],
+      ["so", "そ"],
+      ["ta", "た"],
+      ["chi", "ち"],
+      ["tsu", "つ"],
+      ["te", "て"],
+      ["to", "と"],
+    ]
+  },
+  
+  "japaneseHiragana3":{
+    "title": "Japanese letters n - h",
+    "speed":"1",
+    "mode":"first",// in the works idea
+    "pairs":[
+      // These are missing the phonetic pronunciation
+      ["na", "な"],
+      ["ni", "に"],
+      ["nu", "ぬ"],
+      ["ne", "ね"],
+      ["no", "の"],
+      ["ha", "は"],
+      ["hi", "ひ"],
+      ["fu", "ふ"],
+      ["he", "へ"],
+      ["ho", "ほ"],
+    ]
+  },
+  
+  
+  "japaneseHiragana4":{
+    "title": "Japanese letters m - n",
+    "speed":"1",
+    "mode":"first",// in the works idea
+    "pairs":[
+      // These are missing the phonetic pronunciation
+      ["ma", "ま"],
+      ["mi", "み"],
+      ["mu", "む"],
+      ["me", "め"],
+      ["mo", "も"],
+      ["ya", "や"],
+      ["yu", "ゆ"],
+      ["yo", "よ"],
+      ["ra", "ら"],
+      ["ri", "り"],
+      ["ru", "る"],
+      ["re", "れ"],
+      ["ro", "ろ"],
+      ["wa", "わ"],
+      ["wo", "を"],
+      ["n", "ん"]
+    ]
+  },
+  
+
 }
