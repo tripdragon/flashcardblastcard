@@ -120,5 +120,17 @@ export const lessonsDatabase1 = {
       // juu-ichi, ... 20=ni-juu reusing the number and juu for tens places
       // or rather juu(place) + numeral
     ]
-  }
+  },
+  
+  "japaneseHiragana1":{
+    "title": "Japanese Numbers single - k",
+    "speed":"1",
+    "mode":"first",// in the works idea
+    "pairs":[
+      // These are missing the phonetic pronunciation
+      ["a", "あ"], ["i", "い"], ["u", "う"], ["e", "え"], ["o", "お"], ["ka", "か"], ["ki", "き"], ["ku", "く"], ["ke", "け"], ["ko", "こ"],
+      // ["zero/rei 零", "0"], // also maru
+    ]
+  },
+  
 }

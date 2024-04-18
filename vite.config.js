@@ -10,7 +10,8 @@ export default defineConfig({
   resolve : {
     alias: {
       '@utilites': path.resolve(__dirname, './src/utilites/utilites.js'),
-      '@databases': path.resolve(__dirname, './src/databases')
+      '@databases': path.resolve(__dirname, './src/databases'),
+      '@styles': path.resolve(__dirname, './src/styles')
     },
   }
 })

@@ -1,7 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+// import App from './App.jsx'
+
+import '@styles/reset.scss'
+import '@styles/base.scss'
+
+import '@styles/app.scss'
+
 import Root from "./routes/root";
 
 import Lesson from "./routes/lesson";
@@ -18,7 +23,7 @@ import {
   useLoaderData,
   useParams
 } from "react-router-dom";
-// 
+
 // const database = {
 //   // "japanese" : {
 //   //   "hiragana" : [
@@ -28,57 +33,6 @@ import {
 //   "japanese": {
 //     "hiragana": [ {"a": "あ"}, {"i": "い"}, {"u": "う"}, {"e": "え"}, {"o": "お"}, {"ka": "か"}, {"ki": "き"}, {"ku": "く"}, {"ke": "け"}, {"ko": "こ"}, {"sa": "さ"}, {"shi": "し"}, {"su": "す"}, {"se": "せ"}, {"so": "そ"}, {"ta": "た"}, {"chi": "ち"}, {"tsu": "つ"}, {"te": "て"}, {"to": "と"}, {"na": "な"}, {"ni": "に"}, {"nu": "ぬ"}, {"ne": "ね"}, {"no": "の"}, {"ha": "は"}, {"hi": "ひ"}, {"fu": "ふ"}, {"he": "へ"}, {"ho": "ほ"}, {"ma": "ま"}, {"mi": "み"}, {"mu": "む"}, {"me": "め"}, {"mo": "も"}, {"ya": "や"}, {"yu": "ゆ"}, {"yo": "よ"}, {"ra": "ら"}, {"ri": "り"}, {"ru": "る"}, {"re": "れ"}, {"ro": "ろ"}, {"wa": "わ"}, {"wo": "を"}, {"n": "ん"} ]
 //   },
-//   "german": {
-//     "numbers":[
-//       {"0":"null"},
-//       {"1":"eins"},
-//       {"2":"zwei"},
-//       {"3":"drei"},
-//       {"4":"vier"},
-//       {"5":"fünf"},
-//       {"6":"sechs"},
-//       {"7":"sieben"},
-//       {"8":"acht"},
-//       {"9":"neun"},
-//       {"10": "zehn"}
-//     ]
-//   }
-// }
-
-// import Root, { rootLoader } from "./routes/root";
-// import Team, { teamLoader } from "./routes/team";
-// 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Root />,
-//     loader: rootLoader,
-//     children: [
-//       {
-//         path: "team",
-//         element: <Team />,
-//         loader: teamLoader,
-//       },
-//     ],
-//   },
-// ]);
-
-// const routerTacos = createBrowserRouter([
-//   {
-//     path: "/tacos",
-//     element: <div>Hello tacos!</div>,
-//   },
-// ]);
-// 
-// 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     // element: <div>NAW Farf</div>,
-//     element: <Stuff1 />,
-//   },
-// ]);
-
 
 
 // const router = createBrowserRouter([

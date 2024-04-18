@@ -1,0 +1,86 @@
+
+
+// @media screen and (min-width: 40em) {
+//     .cards {
+//    }
+// 
+//     .card {
+//     }
+// }
+// 
+// @media screen and (min-width: 60em) {
+//     .cards {
+//    }
+// 
+//     .card {
+//      }
+// }
+// 
+// 
+// @media screen and (min-width: 52em) {
+//     .centered {
+// 
+//     }
+// }
+
+// mobile fitrst
+// @media screen and (min-width: 40em) {
+//     .cards {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//     }
+// 
+//     .card {
+//         flex: 0 1 calc(25% - 1em);
+//     }
+// }
+
+#posts{
+  // display: grid; 
+  // grid: auto auto / auto auto auto auto; 
+  // grid-gap: 10px; 
+  
+  // padding: 10px; 
+  
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  @media screen and (min-width: 425px) {
+  	article{
+  		// border: solid 4px green;
+  	}
+  }
+  
+  article{
+    width:100%;
+  }
+  
+  article{
+    // flex: 0 1 24%;
+    // flex: 0 1 calc(25% - 1em);
+    
+    padding: 2em;
+    background-color: white;
+    margin: 1em;
+    border-radius: 4px;
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
+    box-shadow: rgb(60 25 255 / 53%) 0px 1px 2px;
+    color: #000b53;
+  }
+  
+  
+  article:hover{
+    margin-top: 0.8em;
+  }
+  article h3{
+    font-weight: 700;
+  }
+  article h4{
+    color: #37ab00;
+  }
+  
+}
