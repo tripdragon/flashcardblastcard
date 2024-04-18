@@ -2,19 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.jsx'
 
+// import { Link } from "react-router-dom";
+
 import '@styles/reset.scss'
 import '@styles/base.scss'
 
 import '@styles/app.scss'
 
-import Root from "./routes/root";
+import Root from "@routes/root";
+import Posts from "@routes/posts";
 
-import Lesson from "./routes/lesson";
+import Lesson from "@routes/lesson";
 
 // import {database1} from "@databases/database1";
 import {lessonsDatabase1} from "@databases/database1";
-
-
 
 import {
   // createBrowserRouter,
@@ -24,23 +25,17 @@ import {
   useParams
 } from "react-router-dom";
 
-// const database = {
-//   // "japanese" : {
-//   //   "hiragana" : [
-//   //     {"hi":"ひ"}
-//   //   ]
-//   // },
-//   "japanese": {
-//     "hiragana": [ {"a": "あ"}, {"i": "い"}, {"u": "う"}, {"e": "え"}, {"o": "お"}, {"ka": "か"}, {"ki": "き"}, {"ku": "く"}, {"ke": "け"}, {"ko": "こ"}, {"sa": "さ"}, {"shi": "し"}, {"su": "す"}, {"se": "せ"}, {"so": "そ"}, {"ta": "た"}, {"chi": "ち"}, {"tsu": "つ"}, {"te": "て"}, {"to": "と"}, {"na": "な"}, {"ni": "に"}, {"nu": "ぬ"}, {"ne": "ね"}, {"no": "の"}, {"ha": "は"}, {"hi": "ひ"}, {"fu": "ふ"}, {"he": "へ"}, {"ho": "ほ"}, {"ma": "ま"}, {"mi": "み"}, {"mu": "む"}, {"me": "め"}, {"mo": "も"}, {"ya": "や"}, {"yu": "ゆ"}, {"yo": "よ"}, {"ra": "ら"}, {"ri": "り"}, {"ru": "る"}, {"re": "れ"}, {"ro": "ろ"}, {"wa": "わ"}, {"wo": "を"}, {"n": "ん"} ]
-//   },
-
-
+// github pages does not like fancy routes
 // const router = createBrowserRouter([
 const router = createHashRouter([
   {
-    path: "/",
+    // path: "/",
     element: <Root />,
     children: [
+      {
+        path: "/",
+        element: <Posts />,
+      },
       {
         // path: "lesson/:lessonId/:category",
         path: "lesson/:lessonId",
@@ -53,9 +48,10 @@ const router = createHashRouter([
     path: "/tacos",
     element: <Tacos1 />,
   },
+
   // {
   //   path: "lesson/:lessonId",
-  //   element: <Lesson />,
+  //   element: <Lesson database={lessonsDatabase1} />,
   // },
   
 ]);
@@ -65,21 +61,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/*
       <App />
       */}
+
+      
       <RouterProvider router={router} />
   </React.StrictMode>
 )
 
-
-
-function Stuff1() {
-  return (
-    <>
-      <h2>
-        stuffff1
-      </h2>
-    </>
-  )
-}
 
 
 function Tacos1() {
@@ -91,6 +78,8 @@ function Tacos1() {
     </>
   )
 }
+
+
 
 // 
 // function Lesson({database}) {

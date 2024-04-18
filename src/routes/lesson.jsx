@@ -4,12 +4,12 @@ import {
 } from "react-router-dom";
 
 // import logo from './logo.svg';
-import './lesson-extras/lesson.css';
+import '@styles/lesson.scss';
 
 import { useState, useLayoutEffect, useEffect, useMemo } from 'react';
 
 import {Question} from './lesson-extras/question';
-import {AnswersView} from './lesson-extras/answersView';
+import {AnswersView} from './answersView';
 
 
 import {shuffle, randomInt} from '@utilites';
@@ -19,9 +19,6 @@ import {shuffle, randomInt} from '@utilites';
 function Lesson({database, saveShuffledPairs, saveLeft, saveRight}) {
   
   const params = useParams();
-  
-  
-  
   
   const [index, setIndex] = useState(0);
   
@@ -38,9 +35,11 @@ function Lesson({database, saveShuffledPairs, saveLeft, saveRight}) {
   let pairs = databasePick.pairs;
   
   // THESE HAVE TO GO into the useMemo
+  // also hold these, we might go back to key val
   // const left = pairs.map(pair => Object.keys(pair)[0]);          
   // const right = pairs.map(pair => Object.values(pair)[0]);
-  // 
+  
+  // for now use simple arrays
   const left = pairs.map(x => x[0]);       
   const right = pairs.map(x => x[1]);
   
@@ -69,10 +68,6 @@ function Lesson({database, saveShuffledPairs, saveLeft, saveRight}) {
     // console.log("doing effect ONCE!!! 1111");
   }, [saveShuffledPairs]);
   
-  // debugger
-  
-  // const record = shuffledPairs[index];
-  // pairs = shuffledPairs;
   
   // here we reverse the order of the word and answer
   let answer = shuffledPairs[index][0];
@@ -84,14 +79,13 @@ function Lesson({database, saveShuffledPairs, saveLeft, saveRight}) {
     // word = "¿"
     answer = shuffledPairs[index][1];
   }
-  console.log("WORD", word);
+  // console.log("WORD", word);
   
   useEffect(() => {
     console.log("doing effect ONCE!!! 2222");
   });
 
-  console.log("???? do first ???");
-
+  // console.log("???? do first ???");
   // console.log("shuffledPairs", shuffledPairs);
   
 
@@ -104,8 +98,7 @@ function Lesson({database, saveShuffledPairs, saveLeft, saveRight}) {
     // first flashes the answer, BUT we also have to delay the transition cause
     // the answer is already updated showing the wrong answer
     // Refactor this in a react~y way
-    
-    // debugger
+
     // flash the answer
     if( !isPickTheAnswer(ev) ){  
       setShowAnswer(true);
@@ -117,9 +110,7 @@ function Lesson({database, saveShuffledPairs, saveLeft, saveRight}) {
         
       }, 200)
     }
-    
-    // return;
-    
+
     setTimeout(()=>{
         
       // some state checking, seems Not react~y
@@ -152,7 +143,7 @@ function Lesson({database, saveShuffledPairs, saveLeft, saveRight}) {
 
   // this should change route when isDone
   return (
-    <div className="site">
+    <div className="lesson">
       
     {/*
     */}
@@ -181,12 +172,8 @@ function Lesson({database, saveShuffledPairs, saveLeft, saveRight}) {
 
 // ev here is not the event, that got lost in the code noise, cause we need custom data
 function isPickTheAnswer(ev) {
-  // debugger
-  console.log(ev.data);
-  // return ev.data.value === ev.data.original.answer;
+  // console.log(ev.data);  
   return ev.data.value === ev.data.answer;
-  // return ev.data.original.indexOf(ev.data.value) > -1;
-  // return ev.data.original.indexOf(ev.data.value) > -1;
 }
 
 export default Lesson;

@@ -1,0 +1,83 @@
+
+
+.answers-view{
+	  padding-bottom: 100px;
+    background-color: white;
+
+	.winner-title{
+	  font-size: 4rem;
+	  color: orange;
+	  font-weight: 900;
+	  padding: 10px 2rem 0;
+	}
+	.title{
+	  padding: 10px 2rem 0;
+	  font-size: 2rem;
+	  margin: 0;
+	}
+	.title span{
+	  font-style: italic;
+	  font-size: 1.4rem;
+	}
+	.title2{
+	  padding: 10px 2rem 0;
+	  font-size: 2rem;
+	  margin: 0;
+	}
+
+	.left{
+	  font-size: 4rem;
+	  padding: 0em 0.5em;
+	  font-weight: 900;
+	  
+	  display: flex;
+	  flex-direction: column;
+	    
+	  justify-content: center; 
+	  align-items: center;    
+
+	}
+	.left .minititle{
+	  text-align: center;
+	  font-size: 1rem;
+	}
+
+	.correct .title2{
+	  color: blue;
+	}
+	.wrong .title2{
+	  color: red;
+	}
+
+	.wrong .left{
+	  color: red;
+	}
+
+	.correct .left{
+	  color: blue;
+	}
+
+	.results{
+	  flex-grow:1;
+	  flex-shrink:1;
+	  align-self:auto;
+	  align-self:center;
+	}
+
+	ul{
+	  list-style: none;
+	  padding-left: 0;
+	  margin: 0 20px;
+	}
+
+	li {
+	  display: flex;
+	  /* background-color: #bbdefb; */
+	  padding: 2em 0;
+	  gap: 5px;
+	  
+	  border-bottom: solid 1px #d8b0ff;
+	  
+	}
+
+}

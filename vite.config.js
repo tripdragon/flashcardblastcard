@@ -11,7 +11,8 @@ export default defineConfig({
     alias: {
       '@utilites': path.resolve(__dirname, './src/utilites/utilites.js'),
       '@databases': path.resolve(__dirname, './src/databases'),
-      '@styles': path.resolve(__dirname, './src/styles')
+      '@styles': path.resolve(__dirname, './src/styles'),
+      '@routes': path.resolve(__dirname, './src/routes')
     },
   }
 })

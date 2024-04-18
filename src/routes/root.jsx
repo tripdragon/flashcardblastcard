@@ -5,7 +5,7 @@ import { Outlet, Link, useParams } from "react-router-dom";
 
 import {frontPagePosts} from '@databases/frontpage';
 
-import '@styles/frontpageList.scss';
+// import '@styles/frontpageList.scss';
 
 import '@styles/sitetitle.scss';
 
@@ -18,14 +18,11 @@ export default function Root() {
   
   return (
     <>
-      <header id="header">
-        <Link to={`/`}><h1>FlashCards <br/>BlastCards!</h1></Link>
+    <header id="header">
+      <Link to={`/`}><h1>FlashCards <br/>BlastCards!</h1></Link>
+    </header>
       {/*
-        <h1><Link to={`/`}>FlashCards, BlastCards!</Link></h1>
-        */}  
-      </header>
       
-      {/*
       <nav>
         <ul>
           {
@@ -40,21 +37,10 @@ export default function Root() {
         </ul>
       </nav>
       */}
-      <section id="posts" >
-        {
-          frontPagePosts.map((x,ii)=>{
-            return (
-              <Link key={ii} to={x.link}>
-                <article key={ii}>
-                <h3>{x.title}</h3>
-                <h4>Lesson: {x.subtitle}</h4>
-                </article>
-              </Link>
-            )
-          })
-        }
-      </section>
+
     
+    {/*
+      */}
       <div id="detail">
         <Outlet />
       </div>

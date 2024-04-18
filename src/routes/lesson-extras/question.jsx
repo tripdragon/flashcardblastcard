@@ -6,41 +6,14 @@ import {Subject} from './subject';
 
 // import {Delayed} from '../delayed.js';
 
-// 
-// function buildChoices(count, possibles) {
-//   return(
-//     {{
-//       for (var i = 0; i < array.length; i++) {
-//         array[i]
-//       }
-//     }}
-//   )
-// }
-
-// single record
 export function Question({showAnswer=false, word, source, answer, name, userPickAction, possibles, choicesCount}={}){
-  // debugger
-  // 
-  // var gg = "dkfngkdfg"
+
   function handleClick(ev, data) {
     // console.log("click", ev.target.value);
-    // debugger
     ev.data = data;
     userPickAction(ev);
   }
-  // 
-  // const bb = (props) => {
-  // 
-  //   debugger
-  // }
-  // 
-  // let list = record.choices.slice().map(x => 
-  //   <div key={x.id} className="button-item">
-  //     <span>{x}</span>
-  //     <button onClick={handleClick} value={x}>{x}</button>
-  //   </div>
-  // );
-  
+
   
   let yy = shuffle(possibles.slice()).slice(0,choicesCount);
   // let yy = possibles.slice(0,choicesCount);
@@ -48,7 +21,7 @@ export function Question({showAnswer=false, word, source, answer, name, userPick
     yy[0] = answer;
     yy = shuffle(yy);
   }
-  console.log("yy", yy);
+  // console.log("yy", yy);
   
   let index = -1;
   let list = yy.map(x => 
@@ -60,9 +33,7 @@ export function Question({showAnswer=false, word, source, answer, name, userPick
     </div>
   );
   list = shuffle(shuffle(list));
-  
-  // debugger
-  // const answer = record.answer;
+
   // 
   // 
   // let questionItem = <Subject src={record.img}></Subject>;

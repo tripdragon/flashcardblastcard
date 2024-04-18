@@ -1,4 +1,7 @@
 
+import '@styles/answers-view.scss';
+
+
 export function AnswersView({records}) {
   // debugger
   // let index = 0;
