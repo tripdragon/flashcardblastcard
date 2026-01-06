@@ -19,40 +19,41 @@
 // {"a": "あ"}
 // how logic determines this maybe just a starter flag
 
-export const languages = {
-    "japanese": {
-      "hiragana": {
-          "items": [ {"a": "あ"}, {"i": "い"}, {"u": "う"}, {"e": "え"}, {"o": "お"}, {"ka": "か"}, {"ki": "き"}, {"ku": "く"}, {"ke": "け"}, {"ko": "こ"}, {"sa": "さ"}, {"shi": "し"}, {"su": "す"}, {"se": "せ"}, {"so": "そ"}, {"ta": "た"}, {"chi": "ち"}, {"tsu": "つ"}, {"te": "て"}, {"to": "と"}, {"na": "な"}, {"ni": "に"}, {"nu": "ぬ"}, {"ne": "ね"}, {"no": "の"}, {"ha": "は"}, {"hi": "ひ"}, {"fu": "ふ"}, {"he": "へ"}, {"ho": "ほ"}, {"ma": "ま"}, {"mi": "み"}, {"mu": "む"}, {"me": "め"}, {"mo": "も"}, {"ya": "や"}, {"yu": "ゆ"}, {"yo": "よ"}, {"ra": "ら"}, {"ri": "り"}, {"ru": "る"}, {"re": "れ"}, {"ro": "ろ"}, {"wa": "わ"}, {"wo": "を"}, {"n": "ん"} ]
-      }
-    },
-  "german" : {
-    "numbers":{
-      // replace this for a builder
-      // "possibles" : ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"],
-      "items" : [
-        // { "answer":"null", "displayType":"text", "word":"0", "choices":[]},
-        // { "answer":"eins", "displayType":"text", "word":"1", "choices":[]},
-        // ...
-        // go for a basic one to one mapping instead of the redundant meta data
-        { "null": "0"},
-        { "eins": "1"},
-        { "zwei": "2"},
-        { "drei": "3"},
-        { "vier": "4"},
-        { "fünf": "5"},
-        { "sechs": "6"},
-        { "sieben": "7"},
-        { "acht": "8"},
-        { "neun": "9"},
-      ]
-    }
-  }
-}
+// think its not used
+// export const languages = {
+//     "japanese": {
+//       "hiragana": {
+//           "items": [ {"a": "あ"}, {"i": "い"}, {"u": "う"}, {"e": "え"}, {"o": "お"}, {"ka": "か"}, {"ki": "き"}, {"ku": "く"}, {"ke": "け"}, {"ko": "こ"}, {"sa": "さ"}, {"shi": "し"}, {"su": "す"}, {"se": "せ"}, {"so": "そ"}, {"ta": "た"}, {"chi": "ち"}, {"tsu": "つ"}, {"te": "て"}, {"to": "と"}, {"na": "な"}, {"ni": "に"}, {"nu": "ぬ"}, {"ne": "ね"}, {"no": "の"}, {"ha": "は"}, {"hi": "ひ"}, {"fu": "ふ"}, {"he": "へ"}, {"ho": "ほ"}, {"ma": "ま"}, {"mi": "み"}, {"mu": "む"}, {"me": "め"}, {"mo": "も"}, {"ya": "や"}, {"yu": "ゆ"}, {"yo": "よ"}, {"ra": "ら"}, {"ri": "り"}, {"ru": "る"}, {"re": "れ"}, {"ro": "ろ"}, {"wa": "わ"}, {"wo": "を"}, {"n": "ん"} ]
+//       }
+//     },
+//   "german" : {
+//     "numbers":{
+//       // replace this for a builder
+//       // "possibles" : ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"],
+//       "items" : [
+//         // { "answer":"null", "displayType":"text", "word":"0", "choices":[]},
+//         // { "answer":"eins", "displayType":"text", "word":"1", "choices":[]},
+//         // ...
+//         // go for a basic one to one mapping instead of the redundant meta data
+//         { "null": "0"},
+//         { "eins": "1"},
+//         { "zwei": "2"},
+//         { "drei": "3"},
+//         { "vier": "4"},
+//         { "fünf": "5"},
+//         { "sechs": "6"},
+//         { "sieben": "7"},
+//         { "acht": "8"},
+//         { "neun": "9"},
+//       ]
+//     }
+//   }
+// }
 
 
 export const lessonsDatabase1 = {
   "germanNumbers1":{
-    "title": "German Numbers 0-9",
+    "title": "German Numbers 0-10",
     "speed":"1",
     // "mode":"second",// in the works idea
     "mode":"first",// in the works idea
@@ -80,6 +81,7 @@ export const lessonsDatabase1 = {
       ["sieben", "7"],
       ["acht", "8"],
       ["neun", "9"],
+      ["zehn", "10"]
     ]
   },
   "spanishNumbers1":{
@@ -267,7 +269,43 @@ export const lessonsDatabase1 = {
     ["huevo", "egg"],
     ["pescado", "fish"]
   ]
-}
+},
 
+
+"germanGreetings1":{
+  "title": "German Greetings",
+  "speed":"1",
+  "mode":"first",
+  "pairs":[
+    ["hallo", "hello"],
+    ["tschüss", "bye"],
+    ["bitte", "please"],
+    ["danke", "thank you"],
+    ["ja", "yes"],
+    ["nein", "no"],
+    ["guten morgen", "good morning"],
+    ["guten tag", "good day"],
+    ["guten abend", "good evening"],
+    ["wie geht's?", "how are you?"]
+  ]
+},
+
+"japaneseGreetings1":{
+  "title": "Japanese Greetings",
+  "speed":"1",
+  "mode":"first",
+  "pairs":[
+    ["konnichiwa こんにちは", "hello"],
+    ["sayonara さようなら", "goodbye"],
+    ["arigatou ありがとう", "thank you"],
+    ["arigatou gozaimasu ありがとうございます", "thank you (polite)"],
+    ["sumimasen すみません", "excuse me / sorry"],
+    ["hai はい", "yes"],
+    ["iie(ee_eh) いいえ", "no"],
+    ["ohayou おはよう", "good morning"],
+    ["ohayou gozaimasu おはようございます", "good morning (polite)"],
+    ["konbanwa こんばんは", "good evening"]
+  ]
+}
 
 }

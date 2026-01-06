@@ -20,4 +20,7 @@ export const frontPagePosts = [
   { title: "Spanish Greetings", link: "/lesson/spanishGreetings1", subtitle:"ai: greetings" },
   { title: "Spanish days of the week", link: "/lesson/spanishDays1", subtitle:"ai: days" },
   { title: "Spanish Foods", link: "/lesson/spanishFood1", subtitle:"ai: foods" },
+  
+  { title: "German Greetings", link: "/lesson/germanGreetings1", subtitle:"ai: DA!" },
+  { title: "Japanese Greetings", link: "/lesson/japaneseGreetings1", subtitle:"ai: Hi hi!" },
 ]
