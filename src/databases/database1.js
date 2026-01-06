@@ -198,4 +198,76 @@ export const lessonsDatabase1 = {
   },
   
 
+  // AI AIA IAA IAI IAI AI  generated need to proof
+
+"spanishColors1":{
+  "title": "Spanish Colors",
+  "speed":"1",
+  "mode":"first",
+  "pairs":[
+    ["rojo", "red"],
+    ["azul", "blue"],
+    ["verde", "green"],
+    ["amarillo", "yellow"],
+    ["negro", "black"],
+    ["blanco", "white"],
+    ["naranja", "orange"],
+    ["morado", "purple"],
+    ["rosa", "pink"],
+    ["gris", "gray"]
+  ]
+},
+
+"spanishGreetings1":{
+  "title": "Spanish Greetings",
+  "speed":"1",
+  "mode":"first",
+  "pairs":[
+    ["hola", "hello"],
+    ["adiós", "goodbye"],
+    ["por favor", "please"],
+    ["gracias", "thank you"],
+    ["sí", "yes"],
+    ["no", "no"],
+    ["buenos días", "good morning"],
+    ["buenas tardes", "good afternoon"],
+    ["buenas noches", "good night"],
+    ["¿cómo estás?", "how are you?"]
+  ]
+},
+
+"spanishDays1":{
+  "title": "Days of the Week",
+  "speed":"1",
+  "mode":"first",
+  "pairs":[
+    ["lunes", "Monday"],
+    ["martes", "Tuesday"],
+    ["miércoles", "Wednesday"],
+    ["jueves", "Thursday"],
+    ["viernes", "Friday"],
+    ["sábado", "Saturday"],
+    ["domingo", "Sunday"]
+  ]
+},
+
+"spanishFood1":{
+  "title": "Common Foods",
+  "speed":"1",
+  "mode":"first",
+  "pairs":[
+    ["pan", "bread"],
+    ["agua", "water"],
+    ["leche", "milk"],
+    ["arroz", "rice"],
+    ["pollo", "chicken"],
+    ["carne", "meat"],
+    ["manzana", "apple"],
+    ["queso", "cheese"],
+    ["huevo", "egg"],
+    ["pescado", "fish"]
+  ]
+}
+
+
 }

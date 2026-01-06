@@ -14,4 +14,10 @@ export const frontPagePosts = [
   // { title: "Spanish numbers", link: "/lesson/spanishNumbers1", subtitle:"0-10" },
   // { title: "Spanish numbers", link: "/lesson/spanishNumbers1", subtitle:"0-10" },
   // { title: "Spanish numbers", link: "/lesson/spanishNumbers1", subtitle:"0-10" },
+  
+  // AI AIA IA AIIA generated, need to proof
+  { title: "Spanish colors", link: "/lesson/spanishColors1", subtitle:"ai: colors" },
+  { title: "Spanish Greetings", link: "/lesson/spanishGreetings1", subtitle:"ai: greetings" },
+  { title: "Spanish days of the week", link: "/lesson/spanishDays1", subtitle:"ai: days" },
+  { title: "Spanish Foods", link: "/lesson/spanishFood1", subtitle:"ai: foods" },
 ]
